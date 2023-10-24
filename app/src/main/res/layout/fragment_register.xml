@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/purple"
+    tools:context=".RegisterFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/gambar"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="@drawable/bear_login"
+        android:layout_gravity="center_horizontal"
+        app:layout_constraintBottom_toTopOf="@id/register_container"
+        app:layout_constraintStart_toStartOf="@id/register_container"
+        app:layout_constraintEnd_toEndOf="@id/register_container"
+        android:layout_marginBottom="-150dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/register_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:cardBackgroundColor="@color/krem"
+        app:cardCornerRadius="30dp">
+
+        <LinearLayout
+            android:id="@+id/background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+
+            <TextView
+                android:id="@+id/loginText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Register"
+                android:textColor="@color/purple"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                android:drawablePadding="10dp"
+                android:layout_gravity="center_horizontal"/>
+
+            <EditText
+                android:id="@+id/name_inp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/custom_edittext"
+                android:drawableLeft="@drawable/baseline_supervised_user_circle_24"
+                android:drawablePadding="8dp"
+                android:drawableTint="@color/purple"
+                android:hint="Enter your new username"
+                android:textColorHint="@color/purple"
+                android:padding="8dp"
+                android:textColor="@color/purple"
+                android:textSize="16dp"
+                android:gravity="center_vertical"
+                android:textColorHighlight="@color/cardview_dark_background" />
+
+
+            <EditText
+                android:id="@+id/username_inp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_edittext"
+                android:drawableLeft="@drawable/baseline_supervised_user_circle_24"
+                android:drawablePadding="8dp"
+                android:drawableTint="@color/purple"
+                android:hint="Enter your new email"
+                android:textColorHint="@color/purple"
+                android:padding="8dp"
+                android:textColor="@color/purple"
+                android:textSize="16dp"
+                android:gravity="center_vertical"
+                android:textColorHighlight="@color/cardview_dark_background" />
+
+            <EditText
+                android:id="@+id/password_inp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_edittext"
+                android:drawableLeft="@drawable/ock"
+                android:drawablePadding="8dp"
+                android:drawableTint="@color/purple"
+                android:hint="Enter your new password"
+                android:textColorHint="@color/purple"
+                android:inputType="textPassword"
+                android:padding="8dp"
+                android:textColor="@color/purple"
+                android:textSize="16dp"
+                android:gravity="center_vertical"
+                android:textColorHighlight="@color/cardview_dark_background" />
+
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/Regis_button"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/round_button"
+                android:text="Register"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:textColor="@color/krem"
+                android:textStyle="bold"
+                />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>
